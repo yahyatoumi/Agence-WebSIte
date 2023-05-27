@@ -1,36 +1,6 @@
-import { useState, useEffect, ChangeEvent } from "react"
-import { MdOutlineExpandMore, MdOutlineExpandLess } from 'react-icons/md'
 import { IoMdClose } from 'react-icons/io'
-import { CgProfile } from 'react-icons/cg';
 import PrixForm from "./Filter-form/PrixForm";
 import TypeForm from "./Filter-form/TypeForm";
-
-const lis: Li[] = [
-    {
-        name: "A vendre",
-        expanded: false
-    },
-    {
-        name: "Prix",
-        expanded: false
-    },
-    {
-        name: "Type",
-        expanded: false
-    },
-    {
-        name: "Surface",
-        expanded: false
-    },
-    {
-        name: "Chambres",
-        expanded: false
-    },
-    {
-        name: "Filter",
-        expanded: false
-    },
-]
 
 interface Props {
     expandedProp: boolean;

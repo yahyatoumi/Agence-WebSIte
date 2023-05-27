@@ -11,7 +11,7 @@ const Map = () => {
         zoom: 12,
     };
     if (!isLoaded)
-        return <div>loading</div>
+        return <div className="map-container">loading</div>
     else
         return <GoogleMap mapContainerClassName="map-container" options={{...mapOptions}}>
         </GoogleMap >
