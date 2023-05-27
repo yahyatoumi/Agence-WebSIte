@@ -708,6 +708,14 @@ nav .menu-options a:hover {
   .filter-cart .prix-form {
     display: flex;
     justify-content: space-between;
+    padding: 0 0 20px;
+  }
+
+  .h2-prix{
+    margin-bottom: 10px;
+  } 
+  .filter-cart .prix-form h2:first-child {
+    margin-bottom: 5px;
   }
 
   .filter-cart .input-holder {

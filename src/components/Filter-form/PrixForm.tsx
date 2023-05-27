@@ -41,7 +41,7 @@ const PrixForm = () => {
         if (!isNaN(value as any))
             setMaxValue(value as any)
     }
-    return <><h2>Prix</h2>
+    return <><h2 className="h2-prix">Prix</h2>
         <div className="prix-form">
             <div className="min-prix">
                 <h2>minimum</h2>
