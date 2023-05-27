@@ -105,9 +105,8 @@ const Nav = () => {
             </div>
             <ul className="menu-nav-options">
                 <li className={displayOptions.acheter ? 'menu-options-acheter blue' : 'menu-options-acheter'} onClick={() => setDisplayOptions({
+                    ...displayOptions,
                     acheter: !displayOptions.acheter,
-                    vendre: displayOptions.vendre,
-                    credit: displayOptions.credit
                 })}>
                     Acheter
                     <MdOutlineExpandMore className='menu-expand-arrow' />
@@ -123,9 +122,8 @@ const Nav = () => {
 
                 <li>Louer</li>
                 <li className={displayOptions.vendre ? 'menu-options-vendre blue' : 'menu-options-vendre'} onClick={() => setDisplayOptions({
-                    acheter: displayOptions.acheter,
+                    ...displayOptions,
                     vendre: !displayOptions.vendre,
-                    credit: displayOptions.credit
                 })}>Vendre
                     <MdOutlineExpandMore className='menu-expand-arrow' />
                 </li>
@@ -146,8 +144,7 @@ const Nav = () => {
                 
                 <li>Prix immobilierr</li>
                 <li className={displayOptions.credit ? 'menu-options-credit blue' : 'menu-options-credit'}  onClick={() => setDisplayOptions({
-                    acheter: displayOptions.acheter,
-                    vendre: displayOptions.vendre,
+                    ...displayOptions,
                     credit: !displayOptions.credit
                 })}>Credit immobilier
                     <MdOutlineExpandMore className='menu-expand-arrow' />

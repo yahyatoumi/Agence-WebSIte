@@ -47,11 +47,11 @@ const PrixForm = () => {
                 <h2>minimum</h2>
                 <div className="input-holder" >
                     {minExpanded ?
-                        <MdOutlineExpandLess className="expand-icon" onClick={() => {
+                        <MdOutlineExpandLess className="expand-icon-prix" onClick={() => {
                             setMinExpanded(!minExpanded);
                             setMaxExpanded(false);
                         }} /> :
-                        <MdOutlineExpandMore className="expand-icon" onClick={() => {
+                        <MdOutlineExpandMore className="expand-icon-prix" onClick={() => {
                             setMinExpanded(!minExpanded);
                             setMaxExpanded(false);
                         }} />}
@@ -78,11 +78,11 @@ const PrixForm = () => {
                 <h2>maximum</h2>
                 <div className="input-holder" >
                     {maxExpanded ?
-                        <MdOutlineExpandLess className="expand-icon" onClick={() => {
+                        <MdOutlineExpandLess className="expand-icon-prix" onClick={() => {
                             setMaxExpanded(!maxExpanded);
                             setMinExpanded(false);
                         }} /> :
-                        <MdOutlineExpandMore className="expand-icon" onClick={() => {
+                        <MdOutlineExpandMore className="expand-icon-prix" onClick={() => {
                             setMaxExpanded(!maxExpanded);
                             setMinExpanded(false);
                         }} />}

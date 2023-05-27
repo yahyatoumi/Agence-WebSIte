@@ -29,7 +29,7 @@ const lis: Li[] = [
     },
     {
         name: "Filter",
-        expanded: true
+        expanded: false
     },
 ]
 
@@ -92,7 +92,6 @@ const SecondNav = () => {
                     </div>
                 </div>
                 <div className='li-wrapper type'>
-
                     <div className='li' onClick={() => handleItemClick("Type")}>
                         {"Type"}
                         <div className='icon-holder'>
