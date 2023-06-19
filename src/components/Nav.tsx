@@ -22,8 +22,8 @@ const options: DisplayOptions = {
 const Nav = () => {
     const [displayMenu, setDisplayMenu] = useState(false);
     const [displayOptions, setDisplayOptions] = useState(options);
-    return <nav>
-        <div className='img'>
+    return <nav className='flex justify-between'>
+        <div className="img w-32 h-16 cursor-pointer bg-32 bg-no-repeat min-w-32" style={{ backgroundImage: "url('https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png')" }}>
 
         </div>
         <ul className="nav-options">
@@ -141,9 +141,9 @@ const Nav = () => {
                         Comment vendre votre maison ?
                     </a>
                 </div> : ""}
-                
+
                 <li>Prix immobilierr</li>
-                <li className={displayOptions.credit ? 'menu-options-credit blue' : 'menu-options-credit'}  onClick={() => setDisplayOptions({
+                <li className={displayOptions.credit ? 'menu-options-credit blue' : 'menu-options-credit'} onClick={() => setDisplayOptions({
                     ...displayOptions,
                     credit: !displayOptions.credit
                 })}>Credit immobilier
@@ -163,7 +163,7 @@ const Nav = () => {
                         Calculateur de Mensualité
                     </a>
                 </div> : ""}
-                
+
                 <li>Trouver une agence</li>
             </ul>
             <div className='nav-last-section'>

@@ -6,7 +6,6 @@
 
 /* Nav */
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -27,7 +26,8 @@ body {
   overflow: hidden;
 }
 
-nav .nav-options, nav .login-side {
+nav .nav-options,
+nav .login-side {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,8 @@ nav .nav-options, nav .login-side {
   padding: 0 5px;
 }
 
-nav .nav-options li, nav .login-side li {
+nav .nav-options li,
+nav .login-side li {
   height: 60px;
   line-height: 60px;
   position: relative;
@@ -57,14 +58,16 @@ nav .login-side {
   /* background-color: red; */
 }
 
-nav .expand-arrow, nav .pro-icon {
+nav .expand-arrow,
+nav .pro-icon {
   width: 25px;
   height: 25px;
   position: absolute;
   top: 17.5px;
 }
 
-nav .profile-li, nav .lang-li {
+nav .profile-li,
+nav .lang-li {
   padding-left: 30px;
   margin: 0;
 }
@@ -80,7 +83,8 @@ nav .pro-icon {
   right: 0;
 }
 
-nav .profile-icon, nav .lang-icon {
+nav .profile-icon,
+nav .lang-icon {
   width: 25px;
   height: 25px;
   position: absolute;
@@ -128,7 +132,8 @@ nav .options a:hover {
   color: blue;
 }
 
-nav .search-bar, nav .menu-icon {
+nav .search-bar,
+nav .menu-icon {
   display: none;
 }
 
@@ -314,11 +319,13 @@ nav .menu-options a:hover {
     margin-top: 10px;
   }
 
-  nav .nav-options, nav .login-side {
+  nav .nav-options,
+  nav .login-side {
     display: none;
   }
 
-  nav .search-bar, nav .menu-icon {
+  nav .search-bar,
+  nav .menu-icon {
     display: block;
   }
 
@@ -581,7 +588,9 @@ nav .menu-options a:hover {
   color: rgb(27, 26, 26);
 }
 
-.second-nav .avendre-cart .first-option .option-p::before, .second-nav .avendre-cart .second-option .option-p::before, .second-nav .avendre-cart .third-option .option-p::before {
+.second-nav .avendre-cart .first-option .option-p::before,
+.second-nav .avendre-cart .second-option .option-p::before,
+.second-nav .avendre-cart .third-option .option-p::before {
   content: "";
   width: 13px;
   height: 13px;
@@ -608,7 +617,9 @@ nav .menu-options a:hover {
 } */
 
 @media (max-width:990px) {
-  .second-nav .li-wrapper, .second-nav .search-bar {
+
+  .second-nav .li-wrapper,
+  .second-nav .search-bar {
     display: none;
   }
 
@@ -995,7 +1006,7 @@ nav .menu-options a:hover {
 }
 
 @media (max-width:560px) {
-  .carts-container .container{
+  .carts-container .container {
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -1003,7 +1014,7 @@ nav .menu-options a:hover {
     padding-left: 0;
   }
 
-  .carts-container h2{
+  .carts-container h2 {
     margin-left: 0;
   }
 }
